@@ -23,8 +23,10 @@
 	
 	/* Navbar Scripts */
 	// jQuery to collapse the navbar on scroll
+    var href = document.location.href;
+    var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
     $(window).on('scroll load', function() {
-		if ($(".navbar").offset().top > 20) {
+		if ($(".navbar").offset().top > 20 || lastPathSegment == "resume.html") {
 			$(".fixed-top").addClass("top-nav-collapse");
 		} else {
 			$(".fixed-top").removeClass("top-nav-collapse");
