@@ -32,15 +32,6 @@
 
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
     
 
     <!-- Navbar -->
@@ -62,6 +53,9 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#header">ABOUT ME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#portfolio">PORTFOLIO</a>
                 </li>
                 
                 <li class="nav-item">
@@ -92,7 +86,7 @@
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
                         <div class="image-container">
-                            <img class="img-fluid" style="border-radius: 50%;" src="images/prof.jpg" alt="alternative">
+                            <img class="img-fluid" style="border-radius: 50%; width: 85%" src="images/prof.jpg" alt="alternative">
                         </div> <!-- end of image-container -->
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -102,21 +96,17 @@
     <!-- end of header -->
 
 
-    
-    
-
-
-   
-
-    <!-- Statistics -->
-
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                
-                <h5>I'm a computer scientist exploring in the Geoing</h5>
+
+            <div class="col-10 offset-1 text-center" style="padding-top: 60px; padding-bottom: 60px;">
+                <h2 style="color: #33415C;">ABOUT ME</h2>
+                <h6 style="color: #33415C;">I'm a computer scientist exploring in the Geoinformatic Information Systems world. Currently, I'm involved in a couple Geospatial Data Analysis projects, trying to learn as much as possible in my MSc classes and seeking for remote jobs to gain some real work experience, apply what I know and learn much more.</h6>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
+        <div id="portfolio" class="ex-header" style="width: 100%; ">
+            <h2>PORTFOLIO</h2>
+        </div>
     </div> <!-- end of container -->
 
 
@@ -125,7 +115,7 @@
     <div id="contact" class="form">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" >
                     <h2>CONTACT</h2>
                     <ul class="list-unstyled li-space-lg">
                         <li class="address">Don't hesitate to give me a call, send me an email or just use the contact form below.</li>
@@ -135,38 +125,7 @@
                     </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                       
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+            
         </div> <!-- end of container -->
     </div> <!-- end of form -->
     <!-- end of contact -->
