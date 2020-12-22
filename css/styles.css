@@ -110,7 +110,23 @@ a.white {
 	color: #fff;
 }
 
-.inline{
+.round-img{
+	height: 400px; 
+	width: 400px; 
+	border-radius: 50%; 
+	background-image: url('../images/foto.jpeg'); 
+	background-position: center; 
+	background-size: 700px;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+	.round-img {
+	  height: 200px;
+	  width: 200px;
+	  margin: 0 auto;
+	  background-size: 500px;
+	}  
 }
 
 .btn-solid-reg {
@@ -764,7 +780,7 @@ input[type='checkbox'] {
 	background-color: transparent;
 }
 
-.slider-1 .card-image {
+.slider-1 .age {
 	width: 6rem;
 	height: 6rem;
 	margin-right: auto;
